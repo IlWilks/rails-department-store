@@ -1,0 +1,6 @@
+<h1>Welcome to the Department store</h1>
+<h2><%=link_to "Create a new Department", departments_new_path%></h2>
+
+<p><%@departments.each do |department|%>
+  <%=link_to department.name, department%></p>
+  <% end %>

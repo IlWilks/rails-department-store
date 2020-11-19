@@ -1,0 +1,6 @@
+<h1><%=@item.name%></h1>
+<p>Price: $<%=@item.price%></p>
+</br>
+<p><%=link_to "Delete Item", [@department, @item], method: :delete%>
+
+<p><%=link_to "Back", department_items_path%>
